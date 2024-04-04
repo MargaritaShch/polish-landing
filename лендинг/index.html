@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- INTH_SNIPPET_TOP -->
-
+  <script src="/dtime_nums.js"></script>
+  <script>dtime_nums(-1)</script>
 </head>
 
 <body id="prelanding">
@@ -335,25 +336,25 @@
           <p>Z kolei Wam, Drogie Czytelniczki, podajemy link do oficjalnej strony dr Daszyńskiej. Tam sama pani doktor
             szczegółowo opisuje działanie kuracji. Na tej stronie możecie też zamówić kurację biokatywatorem keratynowym
             w świetnej promocji. Promocyjna obniżka ceny trwa do końca dnia <strong id="date">31-3-2024</strong>.</p>
-<!--!!!ЗДЕСЬ ДОЛЖНА БЫТЬ ФОРМА!!!-->
-          <div class="order-form">
+
+          <div class="order-form" id="form_id">
             <img src="/product.png" alt="Product Image" class="product-image">
-            <form action="api.php" method="post">
-                <div class="timer" id="timer">
-                    <p>Koniec rabatu za:</p> 
-                    <div class="time" id="time">
-                        <div class="time-part">
-                            <span class="hours">03</span>
-                            <p class="time-label">GODZINY</p>
-                        </div>:
-                        <div class="time-part">
-                            <span class="minutes">44</span>
-                            <p class="time-label">MINUTY</p>
-                        </div>:
-                        <div class="time-part">
-                            <span class="seconds">28</span>
-                            <p class="time-label">SEKUNDY</p>
-                        </div>
+                <form action="api.php" method="post">
+                    <div class="time simple_timer" id="timer">
+                        <p class ="disribe-timer">Koniec rabatu za:</p> 
+                        <div class="time" id="time">
+                            <div class="time-part">
+                                <span class="hours">03</span>
+                                <p class="time-label">GODZINY</p>
+                            </div>:
+                            <div class="time-part">
+                                <span class="minutes">44</span>
+                                <p class="time-label">MINUTY</p>
+                            </div>:
+                            <div class="time-part">
+                                <span class="seconds">28</span>
+                                <p class="time-label">SEKUNDY</p>
+                            </div>
                     </div>
                 </div>
                 <div class="price">
@@ -371,12 +372,12 @@
                 <p class="name">Imię</p>
                 <input type="text" name="name" required maxlength="32">
                 <p class="number-phone">Numer telefonu</p>
-                <input type="tel" name="phone" required maxlength="32" pattern="[+()\- 0-9]+">
+                <input type="tel" name="phone" required maxlength="32" pattern="[+()\-\s0-9]+">
                 <button type="submit" class="btn btn-primary">ZAMÓW</button>
             </form>
             <p class="order-note">Zapłacisz za zamówienie dopiero po otrzymaniu go</p>
     </div>
-<!--ДО ЭТОГО МОМЕНТА!!!ЗДЕСЬ ДОЛЖНА БЫТЬ ФОРМА!!!-->
+
           <div class="autor d-flex mt-4 mb-4 align-items-center">
             <img class="img-fluid" src="img_autor.png" alt="autor">
             <p class="autor__text mb-0"><strong>Autorka artykułu:</strong> Agata Kwiecińska, <br>
@@ -546,12 +547,12 @@
                 <p>Strona &lt; 1/19 &gt;</p>
               </div>
             </div>
-<!-- !!!ЗДЕСЬ ДОЛЖНА БЫТЬ ФОРМА!!! -->
+
               <div class="order-form">
                 <img src="/product.png" alt="Product Image" class="product-image">
                 <form action="api.php" method="post">
-                    <div class="timer" id="timer">
-                        <p>Koniec rabatu za:</p> 
+                    <div class="time simple_timer" id="timer">
+                        <p class ="disribe-timer">Koniec rabatu za:</p> 
                         <div class="time" id="time">
                             <div class="time-part">
                                 <span class="hours">03</span>
@@ -587,7 +588,7 @@
                 </form>
                 <p class="order-note">Zapłacisz za zamówienie dopiero po otrzymaniu go</p>
         </div>
-<!-- !!!ЗДЕСЬ ДОЛЖНА БЫТЬ ФОРМА!!! -->
+
           </div>
         </article>
         <aside class="col-lg-4 sidebar mb-5 mb-md-0 pb-4 pb-md-0">
@@ -644,6 +645,8 @@
 
 
   <!-- INTH_SNIPPET_BOTTOM -->
+  <script src="/scroll_to_form.js" form_id="form_id"></script>
+  <script src="/simple_timer.js"></script>
 
 
 

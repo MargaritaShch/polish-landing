@@ -482,7 +482,7 @@ small {
         width: 87%; 
         max-width: 500px; 
         margin: 0 auto;
-        gap: 5px; /
+        gap: 5px; 
     }
     
     .product-image {
@@ -504,11 +504,15 @@ small {
         font-size: 1.1rem;
     }
     
-    .time {
+    .disribe-timer {
+      text-align: center;
+    }
+
+    .simple_timer .time  {
         display: flex;
         justify-content: center;
         font-size: 38px;
-        color: red;
+        color: #BF1A60;
         gap: 5px; 
     }
     
@@ -539,7 +543,7 @@ small {
     .old-price,
     .new-price {
         display: block; 
-        font-size: 30px; 
+        font-size: 33px; 
     }
     
     .old-price {
@@ -549,6 +553,7 @@ small {
     
     .new-price {
         color: red;
+        font-weight: bold;
     }
     
     .name,
@@ -558,7 +563,8 @@ small {
         text-align: center;
     }
     
-    .order-form input {
+    .order-form input,
+    .order-form button {
         width: calc(100% - 20px); 
         padding: 10px;
         margin: 0 auto 20px; 
@@ -572,17 +578,17 @@ small {
     }
     
     .order-form button {
-      width: calc(100% - 20px); 
-        background-color: red;
+        background-color: #BF1A60;
         color: white;
         border: none;
         font-size: 18px;
         cursor: pointer; 
-        transition: transform 0.1s ease; 
+        transition: transform 0.1s ease;
     }
     
     .order-form button:hover {
         transform: scale(1.00);
+        background-color: #a10747fe; 
     }
     
     .order-form button:active {
