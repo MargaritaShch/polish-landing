@@ -3,6 +3,8 @@ function dtime_nums(offset) {
   date.setDate(date.getDate() + offset);
   return date.toLocaleDateString();
 }
+
+
 document.addEventListener("DOMContentLoaded", function () {
   let dateElements = document.querySelectorAll('.comment__date');
   dateElements.forEach(function(element) {

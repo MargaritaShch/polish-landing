@@ -47,6 +47,7 @@ function start_timer(className, minutes = 0) {
   }, 1000);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  start_timer("simple_timer", 25)
-});
+
+    document.addEventListener("DOMContentLoaded", function() {
+      start_timer("simple_timer", 25)
+    });

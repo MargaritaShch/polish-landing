@@ -372,7 +372,7 @@
                 <p class="name">Imię</p>
                 <input type="text" name="name" required maxlength="32">
                 <p class="number-phone">Numer telefonu</p>
-                <input type="tel" name="phone" required maxlength="32" pattern="[+()\-\s0-9]+">
+                <input type="tel" id="phone "name="phone" required maxlength="32" pattern="[+()\-\s0-9]+">
                 <button type="submit" class="btn btn-primary">ZAMÓW</button>
             </form>
             <p class="order-note">Zapłacisz za zamówienie dopiero po otrzymaniu go</p>
@@ -583,7 +583,7 @@
                     <p class="name">Imię</p>
                     <input type="text" name="name" required maxlength="32">
                     <p class="number-phone">Numer telefonu</p>
-                    <input type="tel" name="phone" required maxlength="32" pattern="[+()\- 0-9]+">
+                    <input type="tel" id ="phone" name="phone" required maxlength="32" pattern="[+()\-\s0-9]+">
                     <button type="submit" class="btn btn-primary">ZAMÓW</button>
                 </form>
                 <p class="order-note">Zapłacisz za zamówienie dopiero po otrzymaniu go</p>
@@ -647,6 +647,11 @@
   <!-- INTH_SNIPPET_BOTTOM -->
   <script src="/scroll_to_form.js" form_id="form_id"></script>
   <script src="/simple_timer.js"></script>
+  <script>
+    document.getElementById('phone').addEventListener('input', function (e) {
+      this.value = this.value.replace(/[^0-9+\-() ]/g, '');
+    });
+  </script>
 
 
 
