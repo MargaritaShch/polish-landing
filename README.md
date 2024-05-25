@@ -1,41 +1,37 @@
-# Проект: Twój urok
+# Project: Twój urok
 
-## Обзор
+## Overview
 
-Twój urok - это лендинг, посвященный красоте и уходу за собой, созданный для демонстрации революционного продукта для роста ресниц. Сайт предлагает уникальный продукт, способствующий интенсивному росту, укреплению и увеличению объема ресниц.
+Twój urok is a landing page dedicated to beauty and self-care, designed to showcase a revolutionary eyelash growth product. The site offers a unique product that promotes intense growth, strengthening, and volumizing of eyelashes.
 
-### Основные функции:
+### Key Features:
 
-- **Динамическое обновление дат:** Все даты на сайте автоматически обновляются, чтобы отображать актуальную информацию для пользователя. 
+- **Dynamic Date Updates:** All dates on the site are automatically updated to display the current information to the user.
+- **Order Form:** Users can quickly and easily place an order through a convenient form, providing their name and phone number.
+- **Countdown Timer:** The site features a dynamic countdown timer, encouraging users to make a purchase.
+- **Phone Number Validation:** The order form includes phone number validation to prevent the input of incorrect data.
+
+## Technologies
+
+The following technologies and approaches were used in the development of the landing page:
+
+- HTML and CSS for page layout.
+- JavaScript for dynamic elements such as the countdown timer and form validation.
+- PHP for form data processing.
+
+## Changes
+
+During the project, the following changes were made:
+
+- **Automatic Date Updates:** In `dtime_nums.js`, the script monitors the complete loading of DOM content and updates date elements. If the text content indicates "yesterday" or "the day before yesterday," the script adjusts the displayed date accordingly.
   
-- **Форма заказа:** Пользователи могут быстро и легко оформить заказ через удобную форму, указав свои имя и номер телефона.
-- **Обратный отсчет:** На сайте реализован динамический таймер обратного отсчета, мотивирующий пользователей совершить покупку. 
-
-- **Валидация номера телефона:** При заполнении формы заказа реализована валидация номера телефона для предотвращения ввода некорректных данных. 
-
-## Технологии
-
-При разработке лендинга были использованы следующие технологии и подходы:
-
-- HTML и CSS для верстки страницы.
-- JavaScript для динамических элементов, таких как обратный отсчет и валидация формы.
-- PHP для обработки данных формы.
-
-
-## Изменения
-
-В ходе работы над проектом были внесены следующие изменения:
-
-- Автоматическое обновление дат на сайте.В dtime_nums.js скрипт отслеживает полную загрузку содержимого DOM и обновляет элементы даты. Если текстовое содержание указывает на "вчера" или "позавчера", скрипт соответственно корректирует отображаемую дату.
+  ![Dynamic Date Updates](https://github.com/MargaritaShch/polish-landing/assets/109623903/f1ee67b3-134e-455a-8ca0-1e169c24c2af)
   
-  ![Динамическое обновление дат](https://github.com/MargaritaShch/polish-landing/assets/109623903/f1ee67b3-134e-455a-8ca0-1e169c24c2af)
+- **Replacement of Text Block with Order Form:** In `simple_timer.js`, the script starts a 25-minute countdown timer after the document content is fully loaded.
   
-- Замена текстового блока на форму заказа с валидацией и таймером. В simple_timer.js скрипт запускает таймер обратного отсчета на 25 минут после полной загрузки содержимого документа.
+  ![Countdown Timer](https://github.com/MargaritaShch/polish-landing/assets/109623903/a0caae83-e72c-48c2-8097-a2551cd307ed)
+- **Removal of Right Information Menu:** The right informational menu was removed to simplify the design.
+- **Replacement of All Links with Anchor Links:** All links were replaced with anchor links to improve site navigation.
+- **Phone Number Validation:** In the HTML, the script ensures that only numbers, plus signs, parentheses, and dashes can be entered in the phone number field. It removes all characters that do not match the specified pattern.
   
-  ![Обратный отсчет](https://github.com/MargaritaShch/polish-landing/assets/109623903/a0caae83-e72c-48c2-8097-a2551cd307ed)
-- Удаление правого информационного меню для упрощения дизайна.
-- Замена всех ссылок на якорные для улучшения навигации по сайту.
-- Валидация номера телефона. В HTML скрипт обеспечивает ввод в поле телефона только цифр, знаков плюса, скобок и тире. Он удаляет все символы, которые не соответствуют заданному шаблону.
-  
-   ![Валидация номера телефона](https://github.com/MargaritaShch/polish-landing/assets/109623903/75578942-534e-485d-a7cf-d6b383845c6b)
-
+   ![Phone Number Validation](https://github.com/MargaritaShch/polish-landing/assets/109623903/75578942-534e-485d-a7cf-d6b383845c6b)
